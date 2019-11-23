@@ -34,7 +34,7 @@
 					<div class='card-header'><span class='sakura'>❀</span>BLOOM BRASSとは</div>
 					<div class='card-body'>
 						<div class='card-text'>阪神国公立吹奏楽団に所属していた有志のメンバーを中心に，2019年に創設された英国式ブラスバンドの団体です。</div>
-						<div class='card-text'>「BLOOM」には「花が咲く」という意味のほかに，「輝かしい」「清純な」という意味もある。金管楽器らしい華やかできらびやかなサウンドをお届けします！</div>
+						<div class='card-text'>「BLOOM」には「花が咲く」という意味のほかに，「輝かしい」「清純な」という意味もあります。金管楽器らしい華やかできらびやかなサウンドをお届けします！</div>
 					</div>
 				</div>
 				<div class='card mt-4'>
@@ -43,6 +43,22 @@
 						<div class='card-text'>英国式ブラスバンドは，19世紀にイギリスの労働者階級を中心にレクリエーションとして行われていたブラスバンドから派生した，金管楽器と打楽器による楽団です。</div>
 						<div class='card-text'>吹奏楽との違いは木管楽器がないこと，トランペットやフレンチホルンがない代わりにコルネットやテナーホーンといった楽器が使われることです。日本では吹奏楽に比べて馴染みは薄いですが，ブラスバンド版が存在する吹奏楽曲もあります！</div>
 					</div>
+				</div>
+				<div class='card mt-4'>
+					<div class='card-header'><span class='sakura'>❀</span>ブリティッシュブラスの楽器紹介</div>
+					<div class='card-body'>
+						<img src='img/bandinst.png' class='instimg'>
+						<div class='card-text'>○楽器名をクリック(タップ)すると説明が表示されます○</div>
+						<div class='card-text m-1 instname'><u>コルネット</u>：<span class='inst' id='cornet'>吹奏楽でいう，トランペットの代わりに使用される楽器です。ブリティッシュブラスでは最もメンバーが多い楽器です！</span></div>
+						<div class='card-text m-1 instname'><u>フリューゲルホルン</u>：<span class='inst' id='flug'>音域はトランペットやコルネットと同様ですが，より柔らかく，甘美な音色が特徴です。</span></div>
+						<div class='card-text m-1 instname'><u>トロンボーン</u>：<span class='inst' id='trom'>吹奏楽やオーケストラでもおなじみの，中低音を担当する金管楽器です。「スライド」を操作して音程をとっています！</span></div>
+						<div class='card-text m-1 instname'><u>テナーホーン</u>：<span class='inst' id='tenorh'>アルトホルンともいいます。ブリティッシュブラスではハーモニー，旋律など，幅広く担当しており，豊かな響きが特徴です♪</span></div>
+						<div class='card-text m-1 instname'><u>バリトン</u>：<span class='inst' id='bari'>ユーフォニアムとよく似ていますが，別の楽器です。中音域のキラキラした音色が特徴です！</span></div>
+						<div class='card-text m-1 instname'><u>ユーフォニアム</u>：<span class='inst' id='euph'>吹奏楽でもおなじみの金管楽器です。メロディーラインを受け持つことも多いパートです。柔らかい音色が特徴です！</span></div>
+						<div class='card-text m-1 instname'><u>チューバ</u>：<span class='inst' id='tuba'>ブリティッシュブラスでは，E♭チューバとB♭チューバが使用されます。それぞれ「エスバス」「べーバス」と呼ばれます。べーバスがバンドの最低音域を担当します！</span></div>
+						<div class='card-text m-1 instname'><u>打楽器</u>：<span class='inst' id='per'>演奏を彩るのに不可欠なパートです。ティンパニやドラム，鍵盤などを使用します。</span></div>
+					</div>
+				</div>
 				</div>
 			</div>
 
@@ -59,5 +75,8 @@
 
 	</body>
 	<script>
+		$('.instname').click(function(){
+			$(this).children().fadeIn(1000);
+		});
 	</script>
 </html>	
