@@ -1,100 +1,72 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Top page</title>
+		<title>BLOOM BRASS - Top Page</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<link rel="stylesheet" href="style.css">
-
-		<link rel="stylesheet" href="style2.css" media="screen and (min-width: 1000px)">
+		<!-- js -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src='bootstrap/js/bootstrap.bundle.js'></script>
+		<!-- css -->
+		<link rel="stylesheet" href='bootstrap/css/bootstrap.min.css'>
+		<link rel="stylesheet" href='css/style.css'>
 	</head>
 	<body>
 		<header class='header'>
-			<div id='bbtop'>BLOOM BRASS</div>
-				<nav class="global-nav">
-				    <ul class="global-nav__list">
-				      <li class="global-nav__item">Home</li>
-				      <li class="global-nav__item"><a href="">ブリティッシュブラスとは？(工事中)</a></li>
-				      <li class="global-nav__item"><a href="">リンク(工事中)</a></li>
-				      <li class="global-nav__item"><a href="member.html">メンバー専用(工事中)</a></li>
-				    </ul>
-			  </nav>
-			  <div class="hamburger" id="js-hamburger">
-			    <span class="hamburger__line hamburger__line--1"></span>
-			    <span class="hamburger__line hamburger__line--2"></span>
-			    <span class="hamburger__line hamburger__line--3"></span>
-			  </div>
-			  <div class="black-bg" id="js-black-bg"></div>
+			<nav class='navbar navbar-light mb-2 navbar-expand-sm' style='background-color: lavenderblush'>
+				<!-- Topにリンク -->
+				<a href='#' class='navbar-brand'>BLOOM BRASS</a>
+				<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navmenu1' aria-controls='navmenu1' aria-expanded='false' aria-label='Toggle navigation'>
+					<span class='navbar-toggler-icon'></span>
+				</button>
+				<div class='collapse navbar-collapse' id='navmenu1'>
+					<div class='navbar-nav'>
+						<a class='nav-item nav-link' href='#'>TOP</a>
+						<a class='nav-item nav-link' href='#'>BLOOM BRASSとは(工事中)</a>
+						<a class='nav-item nav-link' href='#'>リンク(工事中)</a>
+					</div>
+				</div>
+			</nav>
 		</header>
-
 		<main>
-			<div class='top'>
-				<p class='topMessage2'>応募要項は<a href='https://drive.google.com/file/d/14NmAnRvCpbcVFRsm4smF23YCwKfVJRov/view?usp=drivesdk'>こちら</a></p>
-				<p class='topMessage'>現在出演者募集中！</p>
-				<p class='topMessage'>申し込みは<a href='https://forms.gle/XGUE1aNPQuNZXpu4A'>こちら</a>から</p>
+			<div class='infocenter m-4'>
+				<p>演奏者募集は終了しました。ご応募ありがとうございました！</p>
 			</div>
+			<div class='container'>
+				<div class='card mt-4' id='aboutConcert'>
+					<div class='card-header'><span class='sakura'>❀</span>演奏会情報</div>
+					<div class='card-body'>
+						<img src='img/bloombira.png' class='bira mb-3'>
+						<div class='card-text'>日時： 2020年4月25日(土)</div>
+						<div class='card-text'>場所： 城東 KADO-YA がもよんホール</div>
+						<div class='card-text'>曲目： ディズニーファンタジー　ほか</div>
+					</div>
+				</div>
+				<div class='card mt-4'>
+					<div class='card-header'><span class='sakura'>❀</span>更新情報</div>
+					<div class='card-body'>
+						<div class='card-text'>2019.11.23 ホームページリニューアル</div>
+						<div class='card-text'>2019.09.01 ホームページ開設</div>
+					</div>
+				</div>
 
-			<div class='topcontent' id='aboutConcert'>
-				<div class='midasi'><div class='midasi2'><span class='sakura'>❀</span>演奏会情報</div>
-					<div class='content'>2020年4月25日(土) がもよんホール</div>
+				<div class='twitter'>
+					<a class="twitter-timeline" data-width="500" data-height="700" href="https://twitter.com/BloomBrass?ref_src=twsrc%5Etfw">Tweets by BloomBrass</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 			</div>
-
-			<br>
-
-			<div class='topcontent' id='info'>
-				<div class="midasi"><div class='midasi2'><span class='sakura'>❀</span>更新情報</div>
-					<ul>
-						<li class='newInfo'>2019.09.01<span class='new'>New!</span>ホームページ開設</li>
-						<li class='newInfo'>2019.09.01<span class='new'>New!</span>募集開始</li>
-					</ul>
-				</div>
-			</div>
-
-
-
-			<div class='twitter'>
-				<a class="twitter-timeline" data-width="500" data-height="700" href="https://twitter.com/BloomBrass?ref_src=twsrc%5Etfw">Tweets by BloomBrass</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-			
 
 		</main>
-
-		<footer>
-			<br>
 			<p class='maillink'>
 				<a href='mailto:6dai.british.brass.band@gmail.com?subject=ホームページからの問い合わせ&body=%0D%0A%0D%0A※件名はそのままでお願いします。%0D%0A※返信に時間がかかる場合がございます。'>
-					<img class='mailimg' src='mail.png' alt='メールはこちらから'>
+					<img class='mailimg' src='img/mail.png' alt='メールはこちらから'>
 				</a>
 			</p>
+		<footer>
 			<div>Copyright 2019 BLOOM BRASS</div>
 			<div>All Rights Reserved.</div>
-
 		</footer>
 
 	</body>
 	<script>
-		function toggleNav() {
-		  var body = document.body;
-		  var hamburger = document.getElementById('js-hamburger');
-		  var blackBg = document.getElementById('js-black-bg');
-
-		  hamburger.addEventListener('click', function() {
-		    body.classList.toggle('nav-open');
-		  });
-		  blackBg.addEventListener('click', function() {
-		    body.classList.remove('nav-open');
-		  });
-		}
-		toggleNav();
-
-		$(function(){
-			$('.topMessage').hide().fadeIn(2000);
-		});
-
-		$(function(){
-			$('.topMessage2').hide().fadeIn(2000);
-		});
 	</script>
 </html>	
