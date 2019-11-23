@@ -96,3 +96,12 @@ footer{
 	width:50%;
 	height:50%;
 }
+
+.inst{
+	display:none;
+}
+
+.instimg{
+	width:70%;
+	height:70%;
+}
