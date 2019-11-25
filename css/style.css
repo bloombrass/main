@@ -105,3 +105,13 @@ footer{
 	width:70%;
 	height:70%;
 }
+
+.bbmenu{
+	background: url('../img/menubg_md.png');
+	background-position: 10px;
+}
+
+.icon{
+	width:40px;
+	height:40px;
+}
