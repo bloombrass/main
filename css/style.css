@@ -85,6 +85,7 @@ body{
 .infocenter{
 	text-align: center;
 	font-size: 16px;
+	color: red;
 }
 
 footer{
@@ -114,4 +115,8 @@ footer{
 .icon{
 	width:40px;
 	height:40px;
+}
+
+.readme{
+	font-size: 16px;
 }
