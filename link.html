@@ -1,81 +1,69 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>BLOOM BRASS - リンク</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<meta name='keywords' content='bloombrass,bloom brass,関西,ブリティッシュ,ブリティッシュバンド,英国式バンド'>
-		<meta name="description" content="大阪市城東区を中心に活動予定のブリティッシュバンド，BLOOM BRASSのホームページです。">
-		<!-- js -->
-		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src='bootstrap/js/bootstrap.bundle.js'></script>
-		<!-- css -->
-		<link rel="stylesheet" href='bootstrap/css/bootstrap.min.css'>
-		<link rel="stylesheet" href='css/style.css'>
-	</head>
-	<body>
-		<header class='header'>
-			<nav class='navbar navbar-dark mb-2 navbar-expand-sm bg-dark'>
-				<!-- Topにリンク -->
-				<a href='#' class='navbar-brand'>
-					<img src='img/icon.png' class='icon d-inline-block align-top'>
-					BLOOM BRASS<span class='sakura'>❀</span>
-				</a>
-				<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navmenu1' aria-controls='navmenu1' aria-expanded='false' aria-label='Toggle navigation'>
-					<span class='navbar-toggler-icon'></span>
-				</button>
-				<div class='collapse navbar-collapse' id='navmenu1'>
-					<div class='navbar-nav'>
-						<a class='nav-item nav-link' href='index.html'>TOP</a>
-						<a class='nav-item nav-link' href='britishbrass.html'>BLOOM BRASSとは</a>
-						<a class='nav-item nav-link' href='#'>リンク<span class="sr-only">(現位置)</span></a>
-						<a class='nav-item nav-link' href='http://yuymn.php.xdomain.jp/bb/member.html'>メンバー専用</a>
-					</div>
-				</div>
-			</nav>
-		</header>
-		<main>
-			<div class='container'>
-				<div class='card mt-4'>
-					<div class='card-header'><span class='sakura'>❀</span>SNS</div>
-					<div class='card-body'>
-						<div class='card-text'><a href='https://twitter.com/BloomBrass'>Twitter (@BloomBrass)</a></div>
-					</div>
-				</div>
-				<div class='card mt-4'>
-					<div class='card-header'><span class='sakura'>❀</span>阪神国公立吹奏楽連盟</div>
-					<div class='card-body'>
-						<div class='card-text'><a href='http://ouwo.biz/'>大阪大学吹奏楽団</a></div>
-						<div class='card-text'><a href='http://okuwinds.starfree.jp/'>大阪教育大学吹奏楽部</a></div>
-						<div class='card-text'><a href='http://nuewind.client.jp/'>奈良教育大学ウインドアンサンブル</a></div>
-						<div class='card-text'><a href='http://opu-brass.com/'>大阪府立大学吹奏楽部</a></div>
-						<div class='card-text'><a href='http://concertband.blog111.fc2.com/'>大阪市立大学コンサートバンド</a></div>
-						<div class='card-text'><a href='https://kpu-brass.jimdo.com/'>神戸薬科大学吹奏楽部</a></div>
-					</div>
-				</div>
-				<div class='card mt-4'>
-					<div class='card-header'><span class='sakura'>❀</span>その他</div>
-					<div class='card-body'>
-						<div class='card-text'><a href='https://www.osakacommunity.jp/joto/sisetu.html'>城東区民ホール</a></div>
-						<div class='card-text'><a href='https://www.city.osaka.lg.jp/joto/page/0000385928.html'>城東区ゆめ～まち～未来会議</a></div>
-					</div>
-				</div>
-			</div>
-		</main>
-			<p class='maillink'>
-				<a href='mailto:6dai.british.brass.band@gmail.com?subject=ホームページからの問い合わせ&body=%0D%0A%0D%0A※件名はそのままでお願いします。%0D%0A※返信に時間がかかる場合がございます。'>
-					<img class='mailimg' src='img/mail.png' alt='メールはこちらから'>
-				</a>
-			</p>
-		<footer class='mt-4'>
-			<div>Copyright 2019 BLOOM BRASS</div>
-			<div>All Rights Reserved.</div>
-		</footer>
-
-	</body>
+<head>
+	<title>BLOOM BRASS - リンク</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name='keywords' content='bloombrass,bloom brass,関西,ブリティッシュ,ブリティッシュバンド,英国式バンド'>
+	<meta name="description" content="大阪市城東区を中心に活動予定のブリティッシュバンド，BLOOM BRASSのホームページです。">
+	<!-- js -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src='bootstrap/js/bootstrap.bundle.js'></script>
+	<!-- css -->
+	<link rel="stylesheet" href='bootstrap/css/bootstrap.min.css'>
+	<link rel="stylesheet" href='css/style.css'>
 	<script>
-		$('.instname').click(function(){
-			$(this).children().fadeIn(1000);
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
 		});
 	</script>
-</html>	
+</head>
+
+<body>
+	<div id="header"></div>
+	<main>
+		<div class='container'>
+			<div class='card mt-4'>
+				<div class='card-header'><span class='sakura'>❀</span>SNS</div>
+				<div class='card-body'>
+					<div class='card-text'><a href='https://twitter.com/BloomBrass'>Twitter (@BloomBrass)</a></div>
+				</div>
+			</div>
+			<div class='card mt-4'>
+				<div class='card-header'><span class='sakura'>❀</span>阪神国公立吹奏楽連盟</div>
+				<div class='card-body'>
+					<div class='card-text'><a href='http://ouwo.biz/'>大阪大学吹奏楽団</a></div>
+					<div class='card-text'><a href='http://okuwinds.starfree.jp/'>大阪教育大学吹奏楽部</a></div>
+					<div class='card-text'><a href='http://nuewind.client.jp/'>奈良教育大学ウインドアンサンブル</a></div>
+					<div class='card-text'><a href='http://opu-brass.com/'>大阪府立大学吹奏楽部</a></div>
+					<div class='card-text'><a href='http://concertband.blog111.fc2.com/'>大阪市立大学コンサートバンド</a></div>
+					<div class='card-text'><a href='https://kpu-brass.jimdo.com/'>神戸薬科大学吹奏楽部</a></div>
+				</div>
+			</div>
+			<div class='card mt-4'>
+				<div class='card-header'><span class='sakura'>❀</span>その他</div>
+				<div class='card-body'>
+					<div class='card-text'><a href='https://www.osakacommunity.jp/joto/sisetu.html'>城東区民ホール</a></div>
+					<div class='card-text'><a
+							href='https://www.city.osaka.lg.jp/joto/page/0000385928.html'>城東区ゆめ～まち～未来会議</a></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<p class='maillink'>
+		<a
+			href='mailto:6dai.british.brass.band@gmail.com?subject=ホームページからの問い合わせ&body=%0D%0A%0D%0A※件名はそのままでお願いします。%0D%0A※返信に時間がかかる場合がございます。'>
+			<img class='mailimg' src='img/mail.png' alt='メールはこちらから'>
+		</a>
+	</p>
+	<div id="footer"></div>
+
+</body>
+<script>
+	$('.instname').click(function () {
+		$(this).children().fadeIn(1000);
+	});
+</script>
+
+</html>
